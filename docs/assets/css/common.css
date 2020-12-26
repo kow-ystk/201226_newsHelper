@@ -281,9 +281,7 @@ ul {
   align-items: center;
   justify-content: center;
   width: 960px;
-  height: 720px;
-  background-image: url("https://kow-ystk.github.io/200920-curry/assets/images/curry_4991.jpg");
-  background-size: cover;
+  height: 200px;
 }
 @media screen and (max-width: 767px) {
   .mv__inner {
@@ -293,7 +291,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .mv__inner {
     width: 75vw;
-    height: 56.25vw;
+    height: 15.625vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -380,209 +378,90 @@ ul {
   }
 }
 
-.cook {
-  background-color: #dc914e;
-}
-.cook__inner {
-  width: 80%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px;
-}
-@media screen and (max-width: 767px) {
-  .cook__inner {
-    width: 91.4666666667vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .cook__inner {
-    padding: 1.875vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cook__inner {
-    padding: 3.2vw;
-  }
-}
-
-.cookTitle {
-  font-size: 3.2rem;
-  color: #333;
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .cookTitle {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cookTitle {
-    font-size: 4.2666666667vw;
-    text-align: center;
-  }
-}
-
-.cookContents {
-  padding: 2.4rem;
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .cookContents {
-    padding: 1.875vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cookContents {
-    padding: 3.2vw;
-  }
-}
-.cookContents__cassete {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px;
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .cookContents__cassete {
-    padding: 1.875vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cookContents__cassete {
-    display: block;
-    padding: 3.2vw;
-  }
-}
-.cookContents__cassete:nth-child(2n) {
-  flex-direction: row-reverse;
-}
-@media screen and (max-width: 767px) {
-  .cookContents__cassete:nth-child(2n) {
-    flex-direction: row;
-  }
-}
-.cookContents__imgWrapper, .cookContents__txtWrapper {
-  width: 45%;
-}
-@media screen and (max-width: 767px) {
-  .cookContents__imgWrapper, .cookContents__txtWrapper {
-    width: 100%;
-  }
-}
-.cookContents__image {
-  width: 100%;
-}
-.cookContents__title {
-  font-size: 2.4rem;
-  color: #333;
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .cookContents__title {
-    font-size: 1.875vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cookContents__title {
-    margin-top: 3.2vw;
-    font-size: 3.2vw;
-    text-align: center;
-  }
-}
-.cookContents__txt {
-  padding: 12px;
-  margin-top: 16px;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #333;
-}
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .cookContents__txt {
-    padding: 0.9375vw;
-    margin-top: 1.25vw;
-    font-size: 1.25vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cookContents__txt {
-    padding: 2.1333333333vw;
-    margin-top: 2.1333333333vw;
-    font-size: 2.1333333333vw;
-    background-color: #faa58e;
-  }
-}
-
-.dish {
+.indexLink {
   background-color: #fcdc4d;
 }
-.dish__inner {
+.indexLink__inner {
   width: 80%;
   max-width: 960px;
   margin: 0 auto;
   padding: 24px;
 }
 @media screen and (max-width: 767px) {
-  .dish__inner {
+  .indexLink__inner {
     width: 91.4666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .dish__inner {
+  .indexLink__inner {
     padding: 1.875vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .dish__inner {
+  .indexLink__inner {
     padding: 3.2vw;
   }
 }
 
-.dishTitle {
+.indexLinkTitle {
   font-size: 3.2rem;
   color: #333;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .dishTitle {
+  .indexLinkTitle {
     font-size: 2.5vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .dishTitle {
+  .indexLinkTitle {
     font-size: 4.2666666667vw;
     text-align: center;
   }
 }
 
-.dishContents {
+.indexLinkContents {
   width: 50%;
   padding: 24px 0;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .dishContents {
+  .indexLinkContents {
     padding: 1.875vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .dishContents {
+  .indexLinkContents {
     width: 100%;
     padding: 3.2vw;
   }
 }
-.dishContents__image {
+.indexLinkContents__image {
   width: 100%;
 }
-.dishContents__txtWrapper {
+.indexLinkContents__txtWrapper {
   padding: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .dishContents__txtWrapper {
+  .indexLinkContents__txtWrapper {
     padding: 1.25vw;
     font-size: 1.25vw;
   }
 }
 @media screen and (max-width: 767px) {
-  .dishContents__txtWrapper {
+  .indexLinkContents__txtWrapper {
     padding: 2.1333333333vw;
     font-size: 2.1333333333vw;
+  }
+}
+.indexLinkContents__link {
+  font-size: 24px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .indexLinkContents__link {
+    font-size: 6.4vw;
   }
 }
 

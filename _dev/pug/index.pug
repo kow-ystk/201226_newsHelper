@@ -3,16 +3,16 @@ html(lang='ja')
   head
     block variable
       -
-        $title = 'カレー作り'
+        $title = 'NewsHelper'
         $meta = {
-          'description':'カレー作り',
+          'description':'新聞やニュースを読む補助とする個人的なメモ',
           'keywords':'',
           'og': {
-            'title':'カレー作り',
-            'description':'カレー作り',
+            'title':'NewsHelper',
+            'description':'新聞やニュースを読む補助とする個人的なメモ',
             'url':'',
             'image':'',
-            'site_name':'カレー作り'
+            'site_name':'NewsHelper'
           }
         }
 
@@ -27,8 +27,7 @@ html(lang='ja')
       div.main__inner
         include _section/_mv.pug
         include _section/_about.pug
-        include _section/_cook.pug
-        include _section/_dish.pug
+        include _section/_indexLink.pug
 
     block footer
       include _modules/_footer.pug

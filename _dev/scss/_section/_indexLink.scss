@@ -1,6 +1,6 @@
 @use '_foundation/mixin' as mixin;
 
-.dish {
+.indexLink {
   background-color: #fcdc4d;
 
   &__inner {
@@ -18,7 +18,7 @@
   }
 }
 
-.dishTitle {
+.indexLinkTitle {
   font-size: 3.2rem;
   color: #333;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.dishContents {
+.indexLinkContents {
   width: 50%;
   padding: 24px 0;
   margin: 0 auto;
@@ -63,6 +63,15 @@
     @include mixin.mq() {
       padding: mixin.get_vw(8);
       font-size: mixin.get_vw(8);
+    }
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 1.5;
+
+    @include mixin.mq() {
+      font-size: mixin.get_vw(24);
     }
   }
 }
