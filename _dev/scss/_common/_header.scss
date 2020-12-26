@@ -1,8 +1,8 @@
 @use '../_foundation/mixin' as mixin;
 
 .header {
-  color: #333;
-  background: #e46a38;
+  color: #444;
+  background: #68c6dd;
 
   &__inner {
     @include mixin.sectionWidth();

@@ -1,7 +1,7 @@
 @use '_foundation/mixin' as mixin;
 
 .indexLink {
-  background-color: #fcdc4d;
+  background-color: #F5F8CA ;
 
   &__inner {
     @include mixin.sectionWidth();
@@ -20,7 +20,7 @@
 
 .indexLinkTitle {
   font-size: 3.2rem;
-  color: #333;
+  color: #444;
 
   @include mixin.mq(tablet) {
     font-size: mixin.get_vw(32, 1280);
@@ -33,7 +33,7 @@
 }
 
 .indexLinkContents {
-  width: 50%;
+  width: 100%;
   padding: 24px 0;
   margin: 0 auto;
 
