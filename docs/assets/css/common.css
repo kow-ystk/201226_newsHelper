@@ -269,8 +269,67 @@ ul {
   }
 }
 
-.main__inner {
+.main {
   background-color: #fdbf0f;
+}
+.main__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+@media screen and (max-width: 767px) {
+  .main__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .main__inner {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__inner {
+    padding: 3.2vw;
+  }
+}
+.main__title {
+  font-size: 3.2rem;
+  color: #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .main__title {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__title {
+    font-size: 4.2666666667vw;
+    text-align: center;
+  }
+}
+
+.contents {
+  padding: 24px;
+}
+@media screen and (max-width: 767px) {
+  .contents {
+    padding: 6.4vw;
+  }
+}
+.contents__table {
+  width: 100%;
+  text-align: center;
+}
+.contents__table, .contents__tableHead, .contents__tableData {
+  font-size: 24px;
+  border: 2px solid #333;
+}
+@media screen and (max-width: 767px) {
+  .contents__table, .contents__tableHead, .contents__tableData {
+    font-size: 6.4vw;
+    border: 0.5333333333vw solid #333;
+  }
 }
 
 .mv__inner {

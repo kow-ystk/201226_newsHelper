@@ -1,7 +1,58 @@
 @use '../_foundation/mixin' as mixin;
 
 .main {
+  background-color: #fdbf0f;
+
   &__inner {
-    background-color: #fdbf0f;
+    @include mixin.sectionWidth();
+
+    padding: 24px;
+
+    @include mixin.mq(tablet) {
+      padding: mixin.get_vw(24, 1280);
+    }
+
+    @include mixin.mq() {
+      padding: mixin.get_vw(12);
+    }
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    color: #333;
+
+    @include mixin.mq(tablet) {
+      font-size: mixin.get_vw(32, 1280);
+    }
+
+    @include mixin.mq() {
+      font-size: mixin.get_vw(16);
+      text-align: center;
+    }
+  }
+}
+
+.contents {
+  padding: 24px;
+
+  @include mixin.mq() {
+    padding: mixin.get_vw(24);
+  }
+
+  &__table {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__table,
+  &__tableHead,
+  &__tableData {
+    font-size: 24px;
+    border: 2px solid #333;
+
+    @include mixin.mq() {
+      font-size: mixin.get_vw(24);
+      border: mixin.get_vw(2) solid #333;
+    }
   }
 }
