@@ -1,0 +1,36 @@
+doctype html
+html(lang='ja')
+  head
+    block variable
+      -
+        $title = 'カレー作り'
+        $meta = {
+          'description':'カレー作り',
+          'keywords':'',
+          'og': {
+            'title':'カレー作り',
+            'description':'カレー作り',
+            'url':'',
+            'image':'',
+            'site_name':'カレー作り'
+          }
+        }
+
+    block head
+      include _modules/_head.pug
+
+  body
+    block header
+      include _modules/_header.pug
+
+    main.main
+      div.main__inner
+        include _section/_mv.pug
+        include _section/_about.pug
+        include _section/_cook.pug
+        include _section/_dish.pug
+
+    block footer
+      include _modules/_footer.pug
+
+    include _modules/_script.pug

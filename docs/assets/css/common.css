@@ -1,0 +1,606 @@
+@charset "utf-8";@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: "";
+  content: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  color: #333;
+  text-decoration: none;
+  background-color: #ff9;
+}
+
+/* change colours to suit your needs */
+mark {
+  font-style: italic;
+  font-weight: bold;
+  color: #333;
+  background-color: #ff9;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+@media all and (-ms-high-contrast: none) {
+  body {
+    font-family: "メイリオ", Meiryo, sans-serif;
+  }
+}
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  color: #333;
+  background: #e46a38;
+}
+.header__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .header__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .header__inner {
+    padding: 1.875vw;
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__inner {
+    display: block;
+    padding: 6.4vw 0;
+    font-size: 4.2666666667vw;
+  }
+}
+
+.headerLogo {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .headerLogo {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .headerLogo {
+    font-size: 8.5333333333vw;
+    text-align: center;
+  }
+}
+
+.headerMenu__list {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .headerMenu__list {
+    width: 31.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .headerMenu__list {
+    display: none;
+    width: 53.3333333333vw;
+  }
+}
+
+.footer {
+  color: #333;
+  background: #e46a38;
+}
+.footer__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .footer__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .footer__inner {
+    padding: 1.875vw;
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__inner {
+    display: block;
+    padding: 6.4vw 0;
+    font-size: 4.2666666667vw;
+  }
+}
+
+.footerLogo {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .footerLogo {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footerLogo {
+    font-size: 8.5333333333vw;
+    text-align: center;
+  }
+}
+
+.footerMenu__list {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .footerMenu__list {
+    width: 31.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footerMenu__list {
+    display: none;
+    width: 53.3333333333vw;
+  }
+}
+
+.main__inner {
+  background-color: #fdbf0f;
+}
+
+.mv__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 960px;
+  height: 720px;
+  background-image: url("https://kow-ystk.github.io/200920-curry/assets/images/curry_4991.jpg");
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .mv__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .mv__inner {
+    width: 75vw;
+    height: 56.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mv__inner {
+    width: 96vw;
+    height: 72vw;
+  }
+}
+
+.mvTitle {
+  font-size: 6.2rem;
+  color: #f1f1f1;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .mvTitle {
+    font-size: 4.84375vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mvTitle {
+    font-size: 8.5333333333vw;
+  }
+}
+
+.about {
+  background-color: #fcdc4d;
+}
+.about__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+@media screen and (max-width: 767px) {
+  .about__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .about__inner {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__inner {
+    padding: 3.2vw;
+  }
+}
+.about__txt {
+  padding: 24px;
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border: 2px dashed #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .about__txt {
+    padding: 1.875vw;
+    margin-top: 1.25vw;
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__txt {
+    padding: 3.2vw;
+    margin-top: 2.1333333333vw;
+    font-size: 2.1333333333vw;
+  }
+}
+
+.aboutTitle {
+  font-size: 3.2rem;
+  color: #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .aboutTitle {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutTitle {
+    font-size: 4.2666666667vw;
+    text-align: center;
+  }
+}
+
+.cook {
+  background-color: #dc914e;
+}
+.cook__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+@media screen and (max-width: 767px) {
+  .cook__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cook__inner {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cook__inner {
+    padding: 3.2vw;
+  }
+}
+
+.cookTitle {
+  font-size: 3.2rem;
+  color: #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cookTitle {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cookTitle {
+    font-size: 4.2666666667vw;
+    text-align: center;
+  }
+}
+
+.cookContents {
+  padding: 2.4rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cookContents {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cookContents {
+    padding: 3.2vw;
+  }
+}
+.cookContents__cassete {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cookContents__cassete {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cookContents__cassete {
+    display: block;
+    padding: 3.2vw;
+  }
+}
+.cookContents__cassete:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 767px) {
+  .cookContents__cassete:nth-child(2n) {
+    flex-direction: row;
+  }
+}
+.cookContents__imgWrapper, .cookContents__txtWrapper {
+  width: 45%;
+}
+@media screen and (max-width: 767px) {
+  .cookContents__imgWrapper, .cookContents__txtWrapper {
+    width: 100%;
+  }
+}
+.cookContents__image {
+  width: 100%;
+}
+.cookContents__title {
+  font-size: 2.4rem;
+  color: #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cookContents__title {
+    font-size: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cookContents__title {
+    margin-top: 3.2vw;
+    font-size: 3.2vw;
+    text-align: center;
+  }
+}
+.cookContents__txt {
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .cookContents__txt {
+    padding: 0.9375vw;
+    margin-top: 1.25vw;
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cookContents__txt {
+    padding: 2.1333333333vw;
+    margin-top: 2.1333333333vw;
+    font-size: 2.1333333333vw;
+    background-color: #faa58e;
+  }
+}
+
+.dish {
+  background-color: #fcdc4d;
+}
+.dish__inner {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+@media screen and (max-width: 767px) {
+  .dish__inner {
+    width: 91.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .dish__inner {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dish__inner {
+    padding: 3.2vw;
+  }
+}
+
+.dishTitle {
+  font-size: 3.2rem;
+  color: #333;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .dishTitle {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dishTitle {
+    font-size: 4.2666666667vw;
+    text-align: center;
+  }
+}
+
+.dishContents {
+  width: 50%;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .dishContents {
+    padding: 1.875vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dishContents {
+    width: 100%;
+    padding: 3.2vw;
+  }
+}
+.dishContents__image {
+  width: 100%;
+}
+.dishContents__txtWrapper {
+  padding: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .dishContents__txtWrapper {
+    padding: 1.25vw;
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dishContents__txtWrapper {
+    padding: 2.1333333333vw;
+    font-size: 2.1333333333vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .displayPC {
+    display: none;
+  }
+}
+
+.displaySP {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .displaySP {
+    display: block;
+  }
+}
+
+.underlineHide {
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+@use '_foundation/mixin' as mixin;
+
+.about {
+  background-color: #fcdc4d;
+
+  &__inner {
+    @include mixin.sectionWidth();
+
+    padding: 24px;
+
+    @include mixin.mq(tablet) {
+      padding: mixin.get_vw(24, 1280);
+    }
+
+    @include mixin.mq() {
+      padding: mixin.get_vw(12);
+    }
+  }
+
+  &__txt {
+    padding: 24px;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border: 2px dashed #333;
+
+    @include mixin.mq(tablet) {
+      padding: mixin.get_vw(24, 1280);
+      margin-top: mixin.get_vw(16, 1280);
+      font-size: mixin.get_vw(16, 1280);
+    }
+
+    @include mixin.mq() {
+      padding: mixin.get_vw(12);
+      margin-top: mixin.get_vw(8);
+      font-size: mixin.get_vw(8);
+    }
+  }
+}
+
+.aboutTitle {
+  font-size: 3.2rem;
+  color: #333;
+
+  @include mixin.mq(tablet) {
+    font-size: mixin.get_vw(32, 1280);
+  }
+
+  @include mixin.mq() {
+    font-size: mixin.get_vw(16);
+    text-align: center;
+  }
+}

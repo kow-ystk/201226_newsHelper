@@ -1,0 +1,68 @@
+@use '_foundation/mixin' as mixin;
+
+.dish {
+  background-color: #fcdc4d;
+
+  &__inner {
+    @include mixin.sectionWidth();
+
+    padding: 24px;
+
+    @include mixin.mq(tablet) {
+      padding: mixin.get_vw(24, 1280);
+    }
+
+    @include mixin.mq() {
+      padding: mixin.get_vw(12);
+    }
+  }
+}
+
+.dishTitle {
+  font-size: 3.2rem;
+  color: #333;
+
+  @include mixin.mq(tablet) {
+    font-size: mixin.get_vw(32, 1280);
+  }
+
+  @include mixin.mq() {
+    font-size: mixin.get_vw(16);
+    text-align: center;
+  }
+}
+
+.dishContents {
+  width: 50%;
+  padding: 24px 0;
+  margin: 0 auto;
+
+  @include mixin.mq(tablet) {
+    padding: mixin.get_vw(24, 1280);
+  }
+
+  @include mixin.mq() {
+    width: 100%;
+    padding: mixin.get_vw(12);
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__txtWrapper {
+    padding: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    @include mixin.mq(tablet) {
+      padding: mixin.get_vw(16, 1280);
+      font-size: mixin.get_vw(16, 1280);
+    }
+
+    @include mixin.mq() {
+      padding: mixin.get_vw(8);
+      font-size: mixin.get_vw(8);
+    }
+  }
+}

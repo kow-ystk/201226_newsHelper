@@ -1,0 +1,38 @@
+@use '_foundation/mixin' as mixin;
+
+.mv {
+  &__inner {
+    @include mixin.sectionWidth();
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    height: 720px;
+    background-image: url("https://kow-ystk.github.io/200920-curry/assets/images/curry_4991.jpg");
+    background-size: cover;
+
+    @include mixin.mq(tablet) {
+      width: mixin.get_vw(960, 1280);
+      height: mixin.get_vw(720, 1280);
+    }
+
+    @include mixin.mq() {
+      width: mixin.get_vw(360);
+      height: mixin.get_vw(270);
+    }
+  }
+}
+
+.mvTitle {
+  font-size: 6.2rem;
+  color: #f1f1f1;
+
+  @include mixin.mq(tablet) {
+    font-size: mixin.get_vw(62, 1280);
+  }
+
+  @include mixin.mq() {
+    font-size: mixin.get_vw(32);
+  }
+}
