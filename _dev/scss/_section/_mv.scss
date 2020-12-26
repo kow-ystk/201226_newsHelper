@@ -24,7 +24,7 @@
 
 .mvTitle {
   font-size: 6.2rem;
-  color: #f1f1f1;
+  color: #999;
 
   @include mixin.mq(tablet) {
     font-size: mixin.get_vw(62, 1280);

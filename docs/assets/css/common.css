@@ -113,8 +113,8 @@ body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
   font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", sans-serif;
-  color: #333;
-  background: #fff;
+  color: #444;
+  background: #999;
 }
 
 @media all and (-ms-high-contrast: none) {
@@ -138,8 +138,8 @@ ul {
 }
 
 .header {
-  color: #333;
-  background: #e46a38;
+  color: #444;
+  background: #68c6dd;
 }
 .header__inner {
   width: 80%;
@@ -204,8 +204,8 @@ ul {
 }
 
 .footer {
-  color: #333;
-  background: #e46a38;
+  color: #444;
+  background: #68c6dd;
 }
 .footer__inner {
   width: 80%;
@@ -270,7 +270,7 @@ ul {
 }
 
 .main {
-  background-color: #fdbf0f;
+  background-color: #F5F8CA;
 }
 .main__inner {
   width: 80%;
@@ -295,7 +295,7 @@ ul {
 }
 .main__title {
   font-size: 3.2rem;
-  color: #333;
+  color: #444;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .main__title {
@@ -339,12 +339,12 @@ ul {
 }
 .contents__table, .contents__tableHead, .contents__tableData {
   padding: 4px;
-  border: 2px solid #333;
+  border: 2px solid #444;
 }
 @media screen and (max-width: 767px) {
   .contents__table, .contents__tableHead, .contents__tableData {
     padding: 1.0666666667vw;
-    border: 0.5333333333vw solid #333;
+    border: 0.5333333333vw solid #444;
   }
 }
 
@@ -378,7 +378,7 @@ ul {
 
 .mvTitle {
   font-size: 6.2rem;
-  color: #f1f1f1;
+  color: #999;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .mvTitle {
@@ -392,7 +392,7 @@ ul {
 }
 
 .about {
-  background-color: #fcdc4d;
+  background-color: #F5F8CA;
 }
 .about__inner {
   width: 80%;
@@ -438,7 +438,7 @@ ul {
 
 .aboutTitle {
   font-size: 3.2rem;
-  color: #333;
+  color: #444;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .aboutTitle {
@@ -453,7 +453,7 @@ ul {
 }
 
 .indexLink {
-  background-color: #fcdc4d;
+  background-color: #F5F8CA;
 }
 .indexLink__inner {
   width: 80%;
@@ -479,7 +479,7 @@ ul {
 
 .indexLinkTitle {
   font-size: 3.2rem;
-  color: #333;
+  color: #444;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .indexLinkTitle {

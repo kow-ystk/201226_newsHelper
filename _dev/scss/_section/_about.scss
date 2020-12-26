@@ -1,7 +1,7 @@
 @use '_foundation/mixin' as mixin;
 
 .about {
-  background-color: #fcdc4d;
+  background-color: #F5F8CA ;
 
   &__inner {
     @include mixin.sectionWidth();
@@ -39,7 +39,7 @@
 
 .aboutTitle {
   font-size: 3.2rem;
-  color: #333;
+  color: #444;
 
   @include mixin.mq(tablet) {
     font-size: mixin.get_vw(32, 1280);
