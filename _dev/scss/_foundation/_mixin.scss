@@ -26,6 +26,6 @@ $breakpoints: (
   max-width: 960px;
   margin: 0 auto;
   @include mq() {
-    width: get_vw(343);
+    width: 100%;
   }
 }

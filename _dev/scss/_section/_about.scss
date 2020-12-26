@@ -22,7 +22,6 @@
     margin-top: 16px;
     font-size: 1.6rem;
     line-height: 1.5;
-    border: 2px dashed #333;
 
     @include mixin.mq(tablet) {
       padding: mixin.get_vw(24, 1280);

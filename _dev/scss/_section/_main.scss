@@ -41,17 +41,34 @@
 
   &__table {
     width: 100%;
-    text-align: center;
+    font-size: 24px;
+    text-align: left;
+
+    @include mixin.mq() {
+      font-size: mixin.get_vw(16);
+    }
+  }
+
+  &__tableData {
+    &--date {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+
+      @include mixin.mq() {
+        font-size: mixin.get_vw(12);
+      }
+    }
   }
 
   &__table,
   &__tableHead,
   &__tableData {
-    font-size: 24px;
+    padding: 4px;
     border: 2px solid #333;
 
     @include mixin.mq() {
-      font-size: mixin.get_vw(24);
+      padding: mixin.get_vw(4);
       border: mixin.get_vw(2) solid #333;
     }
   }

@@ -152,7 +152,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .header__inner {
-    width: 91.4666666667vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -218,7 +218,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .footer__inner {
-    width: 91.4666666667vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -280,7 +280,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .main__inner {
-    width: 91.4666666667vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -319,15 +319,31 @@ ul {
 }
 .contents__table {
   width: 100%;
+  font-size: 24px;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .contents__table {
+    font-size: 4.2666666667vw;
+  }
+}
+.contents__tableData--date {
+  font-size: 12px;
+  color: #666;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .contents__tableData--date {
+    font-size: 3.2vw;
+  }
+}
 .contents__table, .contents__tableHead, .contents__tableData {
-  font-size: 24px;
+  padding: 4px;
   border: 2px solid #333;
 }
 @media screen and (max-width: 767px) {
   .contents__table, .contents__tableHead, .contents__tableData {
-    font-size: 6.4vw;
+    padding: 1.0666666667vw;
     border: 0.5333333333vw solid #333;
   }
 }
@@ -344,12 +360,12 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .mv__inner {
-    width: 91.4666666667vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .mv__inner {
-    width: 75vw;
+    width: 100%;
     height: 15.625vw;
   }
 }
@@ -386,7 +402,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .about__inner {
-    width: 91.4666666667vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -404,7 +420,6 @@ ul {
   margin-top: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
-  border: 2px dashed #333;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .about__txt {
@@ -448,7 +463,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .indexLink__inner {
-    width: 91.4666666667vw;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {

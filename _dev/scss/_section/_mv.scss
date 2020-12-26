@@ -11,7 +11,7 @@
     height: 200px;
 
     @include mixin.mq(tablet) {
-      width: mixin.get_vw(960, 1280);
+      width: 100%;
       height: mixin.get_vw(200, 1280);
     }
 
