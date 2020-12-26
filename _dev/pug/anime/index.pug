@@ -1,0 +1,57 @@
+doctype html
+html(lang='ja')
+  head
+    block variable
+      -
+        $title = 'NewsHelper アニメ'
+        $meta = {
+          'description':'新聞やニュースを読む補助とする個人的なメモ',
+          'keywords':'',
+          'og': {
+            'title':'NewsHelper',
+            'description':'新聞やニュースを読む補助とする個人的なメモ',
+            'url':'',
+            'image':'',
+            'site_name':'NewsHelper'
+          }
+        }
+
+    block head
+      include ../_modules/_head.pug
+
+  body
+    block header
+      include ../_modules/_header.pug
+
+    main.main
+      div.main__inner
+        h2.main__title
+          | アニメ
+        div.contents
+          table.contents__table
+            tr
+              th.contents__tableHead
+                | GDP
+              td.contents__tableData
+                | 559兆円
+              td.contents__tableData
+                | 2019年
+            tr
+              th.contents__tableHead
+                | 輸出額
+              td.contents__tableData
+                | 76兆円
+              td.contents__tableData
+                | 2019年
+            tr
+              th.contents__tableHead
+                | 輸入額
+              td.contents__tableData
+                | 78兆円
+              td.contents__tableData
+                | 2019年
+
+    block footer
+      include ../_modules/_footer.pug
+
+    include ../_modules/_script.pug
